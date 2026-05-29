@@ -1,0 +1,41 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Node
+node_modules/
+
+# Angular
+.angular/
+dist/
+
+# Playwright
+playwright-report/
+test-results/
+
+# Selenium
+selenium-report/
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+
+# Google Cloud
+*.json
+credentials.json
+service-account.json
+
+# Build
+build/
