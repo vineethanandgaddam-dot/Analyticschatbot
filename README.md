@@ -17,7 +17,7 @@
 ![Cloud Run](https://img.shields.io/badge/Cloud%20Run-Deployed-4285F4?logo=googlecloud)
 ![New Relic](https://img.shields.io/badge/New%20Relic-Observability-1CE783?logo=newrelic)
 
-![Ask your pharma data anything — home screen](assets/hero_home.png)
+![Ask your pharma data anything — home screen](assets/screenshots/hero_home.png)
 
 ---
 
@@ -38,7 +38,7 @@ This platform turns that bottleneck into a chat box. A user types a question in 
 
 > **Example:** *"Show medicine count by client"* → generates and runs a `JOIN` + `GROUP BY` query across the clients and medicines tables, returns a bar chart, a plain-English summary, and the exact SQL that ran.
 
-![Query result: direct answer, key insight, and pipeline confirmation](assets/query_asked.png)
+![Query result: direct answer, key insight, and pipeline confirmation](assets/screenshots/query_asked.png)
 
 ---
 
@@ -110,7 +110,7 @@ Angular Dashboard
 
 Every request is traced end-to-end through New Relic APM + distributed tracing, and every LLM/SQL-generation step is monitored separately for latency and failure rate.
 
-![Generated SQL panel with full transparency](assets/generated_sql_full.png)
+![Generated SQL panel with full transparency](assets/screenshots/generated_sql_full.png)
 
 ---
 
@@ -158,13 +158,13 @@ Every request is traced end-to-end through New Relic APM + distributed tracing, 
 <td width="50%">
 
 **Visualization**
-![Bar chart visualization](assets/chart_viz.png)
+![Bar chart visualization](assets/screenshots/chart_viz.png)
 
 </td>
 <td width="50%">
 
 **Data Preview**
-![Data preview table](assets/data_preview_sql.png)
+![Data preview table](assets/screenshots/data_preview_sql.png)
 
 </td>
 </tr>
@@ -177,20 +177,20 @@ Every request is traced end-to-end through New Relic APM + distributed tracing, 
 This is one of the most complete parts of the project: three custom New Relic dashboards track the AI pipeline in production, not just the web server.
 
 **AI Monitoring Dashboard** — user query volume, response time trend, guardrail activity
-![AI Monitoring Dashboard](assets/ai_monitoring_dashboard.png)
+![AI Monitoring Dashboard](assets/screenshots/ai_monitoring_dashboard.png)
 
 **AI Observability Dashboard** — LLM request distribution, AI response time trend, SQL-generation latency
-![AI Observability Dashboard](assets/ai_observability_dashboard.png)
+![AI Observability Dashboard](assets/screenshots/ai_observability_dashboard.png)
 
 **Application Performance Monitoring (APM)** — web transaction time, Apdex, throughput, and slowest transactions for the FastAPI backend
-![APM summary for pharma-analytics-backend](assets/apm_summary.png)
+![APM summary for pharma-analytics-backend](assets/screenshots/apm_summary.png)
 
 **Distributed Tracing** — full request traces across the `ask_question` endpoint
-![Distributed tracing view](assets/distributed_tracing.png)
+![Distributed tracing view](assets/screenshots/distributed_tracing.png)
 
 **Alerting & Incident Routing** — 6 NRQL-backed alert conditions (AI request failures, high guardrail activity, high LLM latency, high query response time, high SQL generation time, and PII request detection), routed through an automated workflow to ServiceNow and email
-![Alert conditions configured in New Relic](assets/alert_conditions.png)
-![Alert workflow routing to ServiceNow](assets/alert_workflows.png)
+![Alert conditions configured in New Relic](assets/screenshots/alert_conditions.png)
+![Alert workflow routing to ServiceNow](assets/screenshots/alert_workflows.png)
 
 Tracked metrics across the stack:
 - API response time & throughput
